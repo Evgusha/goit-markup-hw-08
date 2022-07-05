@@ -1,0 +1,38 @@
+/*-----PICTURES-----*/
+.pictures-section {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+.pictures__title {
+    margin-bottom: 50px;
+}
+
+.pictures__list{
+    display: flex;
+}
+
+.pictures__img--fon {
+    position: relative;
+    bottom: 0;
+}
+.pictures__img {
+  margin-right: 30px;  
+}
+
+.pictures__img--text {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    transform: translateY(-100%);
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
