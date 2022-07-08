@@ -1,11 +1,28 @@
 /*-----TEAM-----*/
 .team-section {
-    background-color: #F5F4FA;   
+    background-color: #F5F4FA;  
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1199px){
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px;}
 }
 .team__title--list {
-    margin-bottom: 50px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 45px;
+
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 1.16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }  
 }
  
 .team__title {
@@ -13,13 +30,30 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color:  $text-color;
+    color: #212121;
     padding-top: 30px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;  
 }
 .team__list {
-    display: flex;
- }
+  @media screen and (max-width: 767px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;}
+
+        @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+
+    
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin: 0;
+        flex-wrap: nowrap;}
+
+}
  
 .team__text {
     font-size: 16px;
@@ -32,13 +66,26 @@
 .team__item {
     background-color: $light-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-    &:not(:last-child) {
-    margin-right: 30px;
-}
-}
- 
 
+
+    @media screen and (max-width: 767px){
+    width: 100%;
+    margin-bottom: 30px;}
+    @media screen and (min-width: 768px){
+        flex-basis: 46%;
+        margin: 15px;
+     
+    }
+    @media screen and (min-width: 1200px){
+    flex-basis: 25%;
+    }
+}
+   
+ 
+.pictures-team{
+    width: 100%;
+    margin: 0;
+}
 .team__soc--list {
     display: flex;
     justify-content: center;
@@ -76,4 +123,3 @@
     fill: #AFB1B8;
     transition: fill 250ms ease;
 }
- 
