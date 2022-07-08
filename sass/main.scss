@@ -1,13 +1,15 @@
-@import "./components/container";
 @import "./utilas/variabbels";
+@import "./base/common";
 @import "./utilas/common-styles";
 @import "./components/page-header";
+@import "./components/logo";
 @import "./components/hero";
 @import "./components/hero-modal";
-// @import "./components/benefits";
+@import "./components/benefits";
+@import "./components/mob-menu";
 // @import "./components/pictures";
 // @import "./components/team";
 // @import "./components/clients";
-// @import "./components/footer";
+@import "./components/footer";
 // @import "./components/portfolio-filter";
 // @import "./components/portfolio-work";

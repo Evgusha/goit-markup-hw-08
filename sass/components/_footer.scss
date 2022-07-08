@@ -1,161 +1,190 @@
 /*-----FOOTER-----*/
 .footer {
-    background-color: $footer-color;
-    padding-top: 60px;
-    padding-bottom: 60px;  
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .container {
-    display: flex;
-}
-.footer__logo {
-    font-family:'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: $light-color;
-}
-.footer__logo--accent {
-    color: $accent-color;
-} 
-    
-.footer__address {
-    color: $light-color;
-    font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
-.footer__mail{
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    transition: color 250ms ease;
-    &:hover, &:focus {
-        color: $accent-color;
-    }
+.footer__address {
+  color: $light-color;
+  font-style: normal;
 }
-.fotter__tel{
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    transition: color 250ms ease; 
-    
-    &:hover, &:focus{
-    color: $accent-color;}
+
+.footer__mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.fotter__tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer__list {
-    width: 231px;
-    padding-top: 20px;
+  width: 231px;
+  padding-top: 20px;
 }
 .footer__item {
-    padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .footer__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
     margin-top: 12px;
+  }
 }
+.footer-blok__contact,
 .footer-blok__icon {
-    margin-left: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer-blok__contact {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__soc-list {
-    display: flex;
+  display: flex;
 }
 .footer__icon-item {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px; 
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
 }
-
-
+.footer__check {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-left: auto;
+  }
+}
 .footer__icon-link {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms ease;
-    
-    &:hover, &:focus {
-    background-color: $accent-color;}
-    &:last-child {
-    margin-right: 0;}   
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms ease;
 
-    &:first-child {
-    margin-left: 0;}
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .footer__icon-soc {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
-
-.footer__check {
-    display: block;
-    margin-left: 93px;
-}
 .footer__input--position {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .footer__input {
-    background-color: transparent;
+  background-color: transparent;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 16px 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    padding: 16px 15px;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
     margin-right: 12px;
-    
-    &::placeholder {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);}
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer__btn {
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 10px 29px;
-    border: none;
-    position: relative;
-    display: flex;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 29px;
+  border: none;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
 
 .footer__icon-btn {
-    fill: #FFFFFF;
-    margin-left: 10px;
-    position: absolute;
-    right: 28px;
+  fill: #ffffff;
+  margin-left: 10px;
+  position: absolute;
+  right: 28px;
 }
