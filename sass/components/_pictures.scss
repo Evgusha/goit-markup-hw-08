@@ -1,5 +1,8 @@
 /*-----PICTURES-----*/
 .pictures-section {
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
     padding-top: 47px;
     padding-bottom: 94px;
 }
