@@ -14,42 +14,110 @@
 <body>
 
    
-    <header class="header"> 
+    <header class="header">
         <div class="container">
-            <nav class="header__nav"> 
-                <a class="header__logo link" href="./index.html">
-                    <span class="header__logo--accent">Web</span>Studio  
-                </a>
-
-                <ul class="header__list list">
-                    <li class="header__it "><a href="./index.html" class="header__item  link" >Студия</a> </li>
-                    <li class="header__it current"><a href="portfolio.html" class="header__item curent link">Портфолио</a> </li>
-                    <li class="header__it"><a href="#contacts" class="header__item link">Контакты</a> </li>
-                </ul>
-            </nav>
-
-                <ul class="header__link list"> 
-                    <li>
-                       
-                        <a href="mailto:info@devstudio.com" class="link header__mail">  
-                            <svg class="header__icon-mail" width="16" height="12">
-                            <use class="header__icon--color" href="./img/symbol-defs.svg#icon-mail"></use>
-                            </svg> info@devstudio.com
-                        </a>
-                    </li>
-
-                    <li><a href="tel:+380961111111" class="link header__tel"> 
-                        <svg class="header__icon-tel" width="16" height="12">
-                        <use class="header__icon--color" href="./img/symbol-defs.svg#icon-tel"></use>
-                        </svg>+38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+          <nav class="header__nav">
+            <a class="logo header__logo" href="./index.html">
+              Web<span class="logo__header logo__header--color">Studio</span>
+            </a>
+            <div
+              class="heder-container__menu"
+              id="heder-container__menu"
+              data-menu
+            >
+              <ul class="header__list list">
+                <li class="header__it">
+                  <a href="./index.html" class="header__link link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="header__it current">
+                  <a href="portfolio.html" class="header__link curent link">Портфолио</a>
+                </li>
+                <li class="header__it">
+                  <a href="#contacts" class="header__link link">Контакты</a>
+                </li>
+              </ul>
+          </nav>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                    <svg class="contacts-list__icon" width="16" height="12">
+                      <use class="n" href="./img/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+  
+                <li class="contacts-list__item">
+                  <a href="tel:+380961111111" class="contacts-list__link">
+                    <svg class="contacts-list__icon" width="10" height="16">
+                      <use
+                        class="header__icon--color"
+                        href="./img/symbol-defs.svg#icon-tel"
+                      ></use></svg>
+                      +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <button
+              type="button"
+              class="header__btn"
+              aria-expanded="false"
+              aria-controls="heder-container__menu"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="переклюачатель мобильного меню"
+              >
+                <use
+                  class="icon__cross"
+                  href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"
+                ></use>
+  
+                <use
+                  class="icon__menu"
+                  href="./img/symbol-defs.svg#icon-menu_24px"
+                ></use>
+              </svg>
+            </button>
+            </div>
+         
         </div>
-    </header>
+      </header>
 
     <main>
-        
+        <div class="mob-menu is-hidden">
+            <button class="mob-menu__close">
+              <svg
+              width="18"
+              height="18"
+              aria-label="переклюачатель мобильного меню">
+              <use
+                class="icon__cross"
+                href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"
+              ></use></svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link">Студия</a></li>
+              <li class="mob-menu-list__item"><a href="portfolio.html" class="mob-menu-list__link current">Портфолио</a></li>
+              <li class="mob-menu-list__item"><a href="#contacts" class="mob-menu-list__link">Контакты</a></li>
+            </ul>
+            <div>
+            <ul class="mob-menu-contacts">
+              <li class="mob-menu-contacts__item"><a class="mob-menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="mob-menu-contacts__item"><a class="mob-menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mob-menu-cos">
+              <li class="mob-menu-cos__item"><a href="" class="mob-menu-cos__link">Instagram</a></li>
+              <li class="mob-menu-cos__item"><a href="" class="mob-menu-cos__link">Twitter</a></li>
+              <li class="mob-menu-cos__item"><a href="" class="mob-menu-cos__link">Facebook</a></li>
+              <li class="mob-menu-cos__item"><a href="" class="mob-menu-cos__link">LinkedIn</a></li>
+            </ul>
+          </div>
+          </div>
 
         <section class="work">
             <div class="container">
@@ -71,7 +139,7 @@
                     <li class="work__item"> 
                         <a href=" " class="work__link link">
                         <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/технокряк.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                              <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf">
@@ -84,7 +152,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                          <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/постер.jpg" class="work__img"  alt="веб-сайт на компьютере" width="370" height="294" />
                             <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf">
@@ -97,7 +165,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                         <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/seafood.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                             <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf"> 
@@ -110,7 +178,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                         <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/prime.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                              <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf"> 
@@ -123,7 +191,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                         <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/box.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                              <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf">
@@ -136,7 +204,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                         <div class="work__animation">
-                            <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                            <img src="./img/портфолио/borders.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                              <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="work__paragraf"> 
@@ -149,7 +217,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                          <div class="work__animation">
-                             <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                             <img src="./img/портфолио/limited-ediction.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                               <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                          </div>
                         <div class="work__paragraf">
@@ -162,7 +230,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                          <div class="work__animation">
-                             <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                             <img src="./img/портфолио/lab.jpg" class="work__img" alt="веб-сайт на компьютере" width="370" height="294" />
                               <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                          </div>
                         <div class="work__paragraf">
@@ -175,7 +243,7 @@
                     <li class="work__item">
                         <a href=" " class="work__link link">
                          <div class="work__animation">
-                             <img src="./img/портфолио/технокряк.jpg" alt="веб-сайт на компьютере" width="370" height="294" />
+                             <img src="./img/портфолио/groving.jpg" class="work__img" alt="веб-сайт на компьютере" width="450" height="294" />
                               <p class="work__animation--text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                          </div>
                         <div class="work__paragraf">
@@ -192,66 +260,84 @@
       
     <footer class="footer">
         <div class="container">
-            <div class="footer-blok__contact">
-                <a href="/" class="footer__logo link"><span class="footer__logo--accent">Web</span>Studio </a>
-                <address id="contacts">
-                    <ul class="footer__list list">
-                        <li class="footer__item"><p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p></li>
-                        <li class="footer__item"><a href="mailtoo:info@example.com" class="footer__mail link">info@example.com</a></li>
-                        <li><a href="tel:+380991111111" class="fotter__tel link">+38 099 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="footer-blok__icon">
-                <h2 class="footer__title">присоединяйтесь</h2>
-                <ul class="footer__soc-list list">
-                    <li class="footer__icon-item">
-                        <a href="" class="footer__icon-link link"> 
-                            <svg class="footer__icon-soc" width="20" height="20"> 
-                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__icon-item">
-                        <a href="" class="footer__icon-link">
-                            <svg class="footer__icon-soc" width="20" height="20"> 
-                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__icon-item">
-                        <a href="" class="footer__icon-link">
-                            <svg class="footer__icon-soc" width="20" height="20"> 
-                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__icon-item">
-                        <a href="" class="footer__icon-link">
-                            <svg class="footer__icon-soc" width="20" height="20"> 
-                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            
-           
-            </div>
-            <div class="footer__check">
-                <h2 class="footer__title">Подпишитесь на рассылку</h2>
-                <form>
-                    <div class="footer__input--position">
-                        <input type="email" name="mail" placeholder="E-mail" class="footer__input"> 
-                        
-                        <button type="submit" class="footer__btn">Подписаться<svg class="footer__icon-btn" width="24" height="24"><use href="./img/symbol-defs.svg#icon-icon-send"></use></svg></button>
-                    
-                    </div>
-                </form> 
-            </div>
+          <div class="footer-blok__contact">
+              <a class="logo logo--padding-0" href="./index.html">
+                  Web<span class="logo__footer logo__footer--color">Studio</span>
+                </a>
+            <address id="contacts">
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="footer__item">
+                  <a href="mailtoo:info@example.com" class="footer__mail link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380991111111" class="fotter__tel link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-blok__icon">
+            <h2 class="footer__title">присоединяйтесь</h2>
+            <ul class="footer__soc-list list">
+              <li class="footer__icon-item">
+                <a href="" class="footer__icon-link link">
+                  <svg class="footer__icon-soc" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="" class="footer__icon-link">
+                  <svg class="footer__icon-soc" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="" class="footer__icon-link">
+                  <svg class="footer__icon-soc" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="" class="footer__icon-link">
+                  <svg class="footer__icon-soc" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__check">
+            <h2 class="footer__title">Подпишитесь на рассылку</h2>
+            <form>
+              <div class="footer__input--position">
+                <input
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
+                  class="footer__input"
+                />
+  
+                <button type="submit" class="footer__btn">
+                  Подписаться<svg class="footer__icon-btn" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
     </footer>
         
        
-
+    <script src="./js/menu.js"></script>
 </body>
 </html>
