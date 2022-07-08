@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,6 +11,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 } 
+.body.modal-open {
+    overflow: hidden;
+}
 .link {
     text-decoration: none;
 } 
