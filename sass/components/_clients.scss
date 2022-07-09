@@ -11,14 +11,14 @@
     color: #212121;
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.17px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 42px;
 
     @media screen and (min-width: 1200px){
         font-size: 36px;
-        line-height: 1.16px;
+        line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 62px;}
@@ -29,12 +29,12 @@
     flex-basis: 45%;
     justify-content: center;
     flex-wrap: wrap;
-   margin: -12px;
+   margin: -15px;
 }
 .clients__icon-item {
     width: 210px;
     height: 92px;
-    margin: 12px;
+    margin: 15px;
 
     @media screen and (min-width: 768px){
         width: 226px;

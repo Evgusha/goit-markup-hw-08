@@ -38,13 +38,18 @@
 }
 .benefits__title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: $title-color;
   padding-bottom: 10px;
+  @media screen and (max-width: 767px){
+    text-align: center;}
+
 }
 
 .benefits__text {
   line-height: 1.71;
   color: $text-color;
+  @media screen and (max-width: 767px){
+    margin-bottom: 30px;}
 }

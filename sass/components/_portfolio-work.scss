@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     @media screen and (min-width: 768px){
-    margin: -12px;}
+    margin: -15px;}
 }
 
 .work__item {
@@ -28,11 +28,12 @@
     @media screen and (min-width: 768px){
         width: 354px;
         height: 440px;
-        margin: 12px;}
+        margin: 15px;}
     @media screen and (min-width: 1200px){
     width: 370px;
-    margin-right: 18px;
-    margin-bottom: 18px; 
+    height: 404px;
+    // margin-right: 18px;
+    // margin-bottom: 18px; 
 
     &:nth-child(3n) {
     margin-right: 0;}

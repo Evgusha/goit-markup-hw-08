@@ -214,12 +214,10 @@
   }
 }
 
-.header__item:hover,
-.header__mail:hover,
-.header__item:focus,
-.header__mail:focus,
-.header__tel:hover,
-.header__tel:focus {
+.header__link:hover,
+.contacts-list__link:hover,
+.header__link:focus,
+.contacts-list__link:focus {
   color: $accent-color;
   fill: $accent-color;
 }
@@ -266,4 +264,11 @@
     left: 0;
     bottom: -1px;
   }
+}
+.icon__menu{
+  transition: fill 250ms ease;}
+
+.icon__menu:hover,
+.icon__menu:focus {
+  fill: #2196f3;
 }

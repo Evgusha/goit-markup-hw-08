@@ -273,12 +273,10 @@ a {
   }
 }
 
-.header__item:hover,
-.header__mail:hover,
-.header__item:focus,
-.header__mail:focus,
-.header__tel:hover,
-.header__tel:focus {
+.header__link:hover,
+.contacts-list__link:hover,
+.header__link:focus,
+.contacts-list__link:focus {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -336,6 +334,16 @@ a {
   background: #2196F3;
   left: 0;
   bottom: -1px;
+}
+
+.icon__menu {
+  -webkit-transition: fill 250ms ease;
+  transition: fill 250ms ease;
+}
+
+.icon__menu:hover,
+.icon__menu:focus {
+  fill: #2196f3;
 }
 
 .logo {
@@ -500,7 +508,6 @@ a {
 @media screen and (min-width: 1023px) {
   .modal {
     width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -508,7 +515,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
@@ -553,35 +560,35 @@ a {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 .modal-coment__title::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 .modal-coment__title:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 .modal-coment__title::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 .modal-coment__title::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
@@ -593,7 +600,7 @@ a {
 .modal__galka--text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   -webkit-box-align: center;
@@ -615,7 +622,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 4px;
-    line-height: 24px;
+    line-height: 1.71;
   }
 }
 
@@ -663,14 +670,14 @@ a {
 @media screen and (min-width: 1023px) {
   .galka__link {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
   }
 }
 
 .modal__text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -705,11 +712,10 @@ a {
   position: absolute;
   margin-left: 124px;
   margin-right: 124px;
-  margin-top: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   cursor: pointer;
 }
 @media screen and (max-width: 1023px) {
@@ -724,6 +730,7 @@ a {
   .modal__submit {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    margin-top: 30px;
   }
 }
 
@@ -850,15 +857,25 @@ a {
 
 .benefits__title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {
   line-height: 1.71;
   color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .benefits__text {
+    margin-bottom: 30px;
+  }
 }
 
 .mob-menu {
@@ -903,7 +920,7 @@ a {
   height: 18px;
 }
 .mob-menu__close:hover, .mob-menu__close:focus {
-  fill: red;
+  fill: #2196f3;
 }
 
 .mob-menu-list__item + .mob-menu-list__item {
@@ -944,7 +961,7 @@ a {
 }
 .mob-menu-cos__link {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -1036,7 +1053,7 @@ a {
   color: #212121;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 45px;
@@ -1044,7 +1061,7 @@ a {
 @media screen and (min-width: 1200px) {
   .team__title--list {
     font-size: 36px;
-    line-height: 1.16px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -1086,7 +1103,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1195,7 +1211,7 @@ a {
   color: #212121;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 42px;
@@ -1203,7 +1219,7 @@ a {
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
-    line-height: 1.16px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 62px;
@@ -1221,13 +1237,13 @@ a {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -12px;
+  margin: -15px;
 }
 
 .clients__icon-item {
   width: 210px;
   height: 92px;
-  margin: 12px;
+  margin: 15px;
 }
 @media screen and (min-width: 768px) {
   .clients__icon-item {
@@ -1316,11 +1332,13 @@ a {
 .footer__address {
   color: #FFFFFF;
   font-style: normal;
+  line-height: 1.71;
 }
 
 .footer__mail {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  line-height: 1.71;
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
 }
@@ -1331,6 +1349,7 @@ a {
 .fotter__tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  line-height: 1.71;
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
 }
@@ -1586,7 +1605,7 @@ a {
   letter-spacing: 0.03em;
   background-color: #F5F4FA;
   border-radius: 4px;
-  border-color: currentColor;
+  border: none;
   color: #212121;
   margin-right: 8px;
   padding: 6px 22px;
@@ -1626,7 +1645,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .work__list {
-    margin: -12px;
+    margin: -15px;
   }
 }
 
@@ -1648,14 +1667,13 @@ a {
   .work__item {
     width: 354px;
     height: 440px;
-    margin: 12px;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .work__item {
     width: 370px;
-    margin-right: 18px;
-    margin-bottom: 18px;
+    height: 404px;
   }
   .work__item:nth-child(3n) {
     margin-right: 0;

@@ -29,7 +29,7 @@
     height: 18px;
     &:hover,
     &:focus {
-      fill: red;
+      fill: #2196f3;
     }
   }
 }
@@ -74,7 +74,7 @@
   margin-top: 64px;
   &__link {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
   }

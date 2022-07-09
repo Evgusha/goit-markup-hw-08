@@ -12,13 +12,14 @@
     padding: 40px;
     @media screen and (min-width: 1023px) {
         width: 528px;
-        min-height: 581px; } 
+            // min-height: 581px; } 
+    }
 }
 .modal__title {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
@@ -60,7 +61,7 @@
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em; 
     }
 }
@@ -72,7 +73,7 @@
 .modal__galka--text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
    align-items: center;
@@ -83,7 +84,7 @@
    display: flex;
    align-items: center;
    margin-right: 4px; 
-    line-height: 24px;}
+    line-height: 1.71;}
 }
 .modal__galka--text::before {
     content: "";
@@ -120,13 +121,13 @@
     line-height: 14px;
     @media screen and (min-width: 1023px){
         font-size: 14px;
-         line-height: 24px;}
+         line-height: 1.71;}
 }
 
 .modal__text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
 }
@@ -154,20 +155,22 @@
     position: absolute;
     margin-left: 124px;
     margin-right: 124px;
-    margin-top: 30px;
+    
     
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     cursor: pointer;
     @media screen and (max-width: 1023px){
+        
          transform: translateY(-50%);
         transform: translateX(-15%); 
        }
       
       @media screen and (min-width: 1024px){
         transform: translateY(-50%);
+        margin-top: 30px;
       }
 
 }

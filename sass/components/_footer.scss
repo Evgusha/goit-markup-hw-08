@@ -23,11 +23,13 @@
 .footer__address {
   color: $light-color;
   font-style: normal;
+  line-height: 1.71;
 }
 
 .footer__mail {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  line-height: 1.71;
   transition: color 250ms ease;
   &:hover,
   &:focus {
@@ -37,6 +39,7 @@
 .fotter__tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  line-height: 1.71;
   transition: color 250ms ease;
 
   &:hover,
